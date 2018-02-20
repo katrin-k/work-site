@@ -192,6 +192,7 @@ a {
     grid-template-columns: repeat(5, 20%);
     grid-template-rows: repeat(5, 200px);
     grid-row-gap: 10px;
+    max-height: 1200px;
   }
   .card-freelance {
     grid-column: 1/4;
@@ -220,6 +221,11 @@ a {
     grid-template-columns: 1fr 3fr 2fr 3fr 1fr 3fr 1fr;
     grid-template-rows: 2fr 5fr 1fr 1fr 1fr 4fr 2fr;
     grid-row-gap: 0;
+  }
+  @supports (display: grid) {
+    .card-wrapper {
+      max-height: 600px;
+    }
   }
   .card-freelance {
     grid-column: 2/5;
