@@ -1,46 +1,53 @@
-<!DOCTYPE html>
-<html dir="ltr" lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Katrin K.</title>
-    <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <h1 class="title"><a href="#">katrin k.</a></h1>
-        <p class="subtitle">#frontend #community #sunshine</p>
-      </header>
-      <main class="card-wrapper">
-        <section class="card card-home card-freelance">
-          <h2>Freelance Work</h2>
-          <p>I'm a frontend developer around all things HTML&CSS&JS.</p>
-          <p class="p-cta"><a href="freelance.html" class="text-link">Find out how I can help you with your project.</a></p>
-        </section>
-        <section class="card card-home card-samples">
-          <h2>Previous Projects</h2>
-          <p class="p-cta"><a href="samples.html" class="text-link">Get to know some of my previous work.</a></p>
-        </section>
-        <section class="card card-home card-community">
-          <h2>Community</h2>
-          <p>I spend a lot of time in and with communities. Both inside and outside of the tech scene.</p>
-          <p class="p-cta"><a href="community.html" class="text-link">Learn more about my community work.</a></p>
-        </section>
-        <section class="card card-home card-contact">
-          <h2>Contact</h2>
-          <p>Drop me a line...</p>
-          <p class="p-cta"><a href="mailto:katrin.kampfrath@gmail.com" class="text-link">katrin.kampfrath@gmail.com</a></p>
-          <p>... or checkout out my other web stuff</p>
-          <ul>
-            <li class="social-li"><a href="https://twitter.com/_die_katrin" target="_blank" class="text-link">Twitter</a></li>
-            <li class="social-li"><a href="https://codepen.io/katrin-k/" target="_blank" class="text-link">Codepen</a></li>
-            <li class="social-li"><a href="https://github.com/katrin-k?tab=repositories" target="_blank" class="text-link">Github</a></li>
-          </ul>
-        </section>
-      </main>
-      <footer class="footer">
-        <p>Built with &#9829; and sunshine.</p>
-      </footer>
-    </div>
-  </body>
-</html>
+---
+layout: base
+type: index
+---
+<main class="card-wrapper">
+  <section class="card card-home card-freelance">
+    <h2>Freelance Work</h2>
+    <p>I'm a frontend developer around all things HTML&CSS&JS.</p>
+    <p class="p-cta"><a href="/freelance" class="cta-link">Find out how I can help you with your project.</a></p>
+  </section>
+  <section class="card card-home card-samples">
+    <h2>Previous Projects</h2>
+    <p class="p-cta"><a href="/samples" class="cta-link">Get to know some of my previous work.</a></p>
+  </section>
+  <section class="card card-home card-community">
+    <h2>Community</h2>
+    <p>I spend a lot of time in and with communities. Both inside and outside of the tech scene.</p>
+    <p class="p-cta"><a href="/community" class="cta-link">Learn more about my community work.</a></p>
+  </section>
+  <section class="card card-home card-contact">
+    <h2>Contact</h2>
+    <p>Drop me a line...</p>
+    <p class="p-cta"><a href="mailto:katrin.kampfrath@gmail.com" class="text-link">katrin.kampfrath@gmail.com</a></p>
+    <p>... or checkout out my other web stuff</p>
+    <ul>
+      <li class="social-li">
+        <svg width="16px" height="16px" viewBox="10 3 16 26" fill="none" stroke="#3e3e3e" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M17 19.7V27"/>
+          <path d="M17 5v7.6"/>
+          <path d="M6 19.7L17 27l11-7.3V12.3L17 5L6 12.3V16.7z"/>
+          <path d="M28 19.7L17 12.3l-11 7.4"/>
+          <path d="M6 12.3l11 7.3 l11-7.3"/>
+        </svg>
+        <a href="https://codepen.io/katrin-k/" target="_blank" class="text-link">
+          Codepen
+        </a>
+      </li>
+      <li class="social-li">
+        <svg class="svg-icon" viewbox="0 0 16 16"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg>
+        <a href="https://github.com/katrin-k?tab=repositories" target="_blank" class="text-link">
+          Github
+        </a>
+      </li>
+      <li class="social-li">
+        <svg class="svg-icon" viewbox="0 0 16 16"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg>
+        <a href="https://twitter.com/_die_katrin" target="_blank" class="text-link">
+          Twitter
+        </a>
+      </li>
+    </ul>
+
+  </section>
+</main>

@@ -1,0 +1,62 @@
+
+.card {
+  border: 5px solid black;
+  padding: 1rem 2rem 2rem;
+  background-color: $turquoise;
+}
+
+
+.text-link:active,
+.text-link:hover,
+.text-link:focus,
+.text-link:visited {
+  border-bottom: 1px dashed $yellow;
+}
+
+.cta-line {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.cta-icon-left,
+.cta-icon-right {
+  display: none;
+}
+
+.cta-link {
+  font-weight: 600;
+}
+
+.cta-link:active,
+.cta-link:hover,
+.cta-link:focus,
+.cta-link:visited {
+  border-bottom: 1px dashed $yellow;
+}
+
+.footer-link {
+  color: $darkred;
+}
+
+@media screen and (min-width: 650px) {
+  .cta-icon-left,
+  .cta-icon-right {
+    display: inline-block;
+    font-size: 2.7rem;
+  }
+
+  .cta-icon-left {
+    margin-right: 0.3rem;
+    transform: scaleX(-1);
+  }
+
+  .cta-icon-right {
+    margin-left: 0.3rem;
+  }
+}
+
+.svg-icon {
+  width: 16px;
+  height: 16px;
+  fill: $darkgrey;
+}

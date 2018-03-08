@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'Satisfy';
+  src: url('../fonts/Satisfy-Regular.ttf') format('truetype');
+}
+
+// Import partials.
+@import
+  "custom/vars",
+  "custom/normalize",
+  "custom/base",
+  "custom/layout",
+  "custom/components",
+  "custom/page-community",
+  "custom/page-freelance",
+  "custom/page-home",
+  "custom/page-samples"
+;

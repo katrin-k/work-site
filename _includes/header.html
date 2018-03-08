@@ -1,0 +1,14 @@
+<header class="header">
+  <h1 class="title"><a href="/">katrin k.</a></h1>
+  <p class="subtitle">#frontend #community #sunshine</p>
+  {% if page.url != "/" %}
+  <nav>
+    <ul class="nav-list">
+      <li class="nav-li"><a href="/index" class="nav-link"><span class="nav-text">Home</span></a></li>
+      <li class="nav-li"><a href="/freelance" class="nav-link{%if page.url == "/freelance/" %} active{%endif%}"><span class="nav-text">Freelance Work</span></a></li>
+      <li class="nav-li"><a href="/samples" class="nav-link{%if page.url == "/samples/" %} active{%endif%}"><span class="nav-text">Previous Projects</span></a></li>
+      <li class="nav-li"><a href="/community" class="nav-link{%if page.url == "/community/" %} active{%endif%}"><span class="nav-text">Community</span></a></li>
+    </ul>
+  </nav>
+  {% endif %}
+</header>

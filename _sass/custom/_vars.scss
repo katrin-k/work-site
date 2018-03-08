@@ -1,0 +1,28 @@
+// Define defaults for each variable.
+
+$base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$base-font-size:   18px !default;
+$base-font-weight: 400 !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+$heading-font-family: 'Satisfy', monospace;
+
+$darkred: #8b0000;
+$red: rgba(255, 94, 91, 1);
+$darkgrey: #3e3e3e;
+$grey: rgba(216, 216, 216, 1);
+$paleyellow: rgba(255, 255, 234, 1);
+$turquoise: #00cecb;
+$darkturquoise: #00bab8;
+$yellow: #ffed66;
+$anthrazit: #555;
+
+$background-color: $paleyellow !default;
+
+$text-color:       $darkred !default;
+$link-color: $yellow;
+$rgsoc-red: #D82222;
+
+
+@mixin transition($time: 0.2s) {
+  transition: all $time ease-in;
+}

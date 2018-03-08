@@ -1,0 +1,85 @@
+/* ============================= */
+/* Basic page layout styles */
+
+.wrapper {
+  margin: 0 0.5rem;
+  display: grid;
+  grid-template-rows: max-content 1fr 90px;
+  height: 100vh;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    margin: 0 2rem;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.header {
+  margin-bottom: 5rem;
+}
+
+.title, .subtitle {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.title a {
+  color: $darkred;
+}
+
+.nav-list {
+  margin: 2rem 0 0
+}
+
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem 0.5rem 0;
+  color: $darkturquoise;
+  text-decoration: none;
+
+}
+
+.nav-text {
+  transition: all 0.1s ease-in;
+}
+
+.nav-link.active .nav-text,
+.nav-link:active .nav-text,
+.nav-link:hover .nav-text,
+.nav-link:focus .nav-text,
+.nav-link:visited .nav-text {
+  border-bottom: 2px dashed $darkred;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-list {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0 0 1.6rem;
+  }
+  .nav-link {
+    padding: 0.5rem 1rem;
+    border-right: 1px solid $turquoise;
+  }
+  .nav-li:last-child .nav-link {
+    border-right: none;
+  }
+}
+
+.footer {
+  align-self: center;
+  text-align: right;
+}
+
+.footer--contact {
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+}

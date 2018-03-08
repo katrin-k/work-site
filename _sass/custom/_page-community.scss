@@ -1,0 +1,64 @@
+/*======== Community page =========*/
+
+.project-item {
+  margin: 2rem 0;
+}
+
+.project-img {
+  margin-bottom: 1rem;
+}
+
+.project-img .img-link:hover img,
+.project-img .img-link:active img,
+.project-img .img-link:focus img,
+.project-img .img-link:visited img {
+  box-shadow: 0 0 3px $anthrazit;
+}
+
+.project-img img,
+.project-img-rgsoc,
+.project-img-crypto {
+  border-radius: 20px;
+  width: 100px;
+  height: 100px;
+  @include transition;
+}
+
+.project-img-rgsoc,
+.project-img-crypto {
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+}
+
+.project-img-rgsoc .img-link,
+.project-img-crypto .img-link {
+  align-self: stretch;
+}
+
+.project-img-rgsoc {
+  background-color: $rgsoc-red;
+}
+
+.project-img-rgsoc img,
+.project-img-crypto img {
+  object-fit: contain;
+}
+
+.project-heading {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .project-item {
+    display: flex;
+  }
+  /* min-width for Safari 9.x to properly size flex items */
+  .project-img {
+    min-width: 100px;
+  }
+  .project-info {
+    margin: 0.4rem 0 0 1.5rem;
+    max-width: 75%;
+  }
+}
