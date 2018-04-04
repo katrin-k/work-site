@@ -25,7 +25,7 @@ keywords: >-
   generators, HMTL templates, Sass, Less, CSS preprocessors, usability,
   accessibility, blog, CMS
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://work.die-katrin.eu" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://work.die-katrin.eu/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: _die_katrin
 github_username:  katrin-k
 
@@ -38,9 +38,10 @@ plugins:
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
 #   - node_modules
 #   - vendor/bundle/
 #   - vendor/cache/

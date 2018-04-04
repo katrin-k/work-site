@@ -22,7 +22,7 @@
 }
 
 .header {
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 .title, .subtitle {
@@ -34,10 +34,6 @@
   color: $darkred;
 }
 
-.nav-list {
-  margin: 2rem 0 0
-}
-
 .nav-link {
   display: block;
   padding: 0.5rem 1rem 0.5rem 0;
@@ -47,6 +43,7 @@
 }
 
 .nav-text {
+  padding-bottom: 0.2rem;
   transition: all 0.1s ease-in;
 }
 
@@ -62,7 +59,7 @@
   .nav-list {
     display: flex;
     align-items: center;
-    margin: 2rem 0 0 1.6rem;
+    margin: 0 0 0 1.6rem;
   }
   .nav-link {
     padding: 0.5rem 1rem;
@@ -76,10 +73,4 @@
 .footer {
   align-self: center;
   text-align: right;
-}
-
-.footer--contact {
-  align-self: center;
-  display: flex;
-  justify-content: space-between;
 }

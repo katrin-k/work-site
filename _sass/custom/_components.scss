@@ -14,16 +14,22 @@
 }
 
 .cta-line {
-  margin: 1rem 0;
+  display: inline-block;
+  margin: 3rem 0 2rem;
+  border: 3px dotted #ffed66;
+  padding: 1rem 2rem;
   font-size: 1.2rem;
 }
 
 .cta-icon-left,
 .cta-icon-right {
   display: none;
+  font-family: sans-serif;
+  vertical-align: middle;
 }
 
 .cta-link {
+  padding-bottom: 0.2rem;
   font-weight: 600;
 }
 
