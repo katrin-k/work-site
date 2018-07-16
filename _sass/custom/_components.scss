@@ -2,7 +2,7 @@
 .card {
   border: 5px solid black;
   padding: 1rem 2rem 2rem;
-  background-color: $turquoise;
+  background-color: $darkturquoise;
 }
 
 
@@ -16,7 +16,7 @@
 .cta-line {
   display: inline-block;
   margin: 3rem 0 2rem;
-  border: 3px dotted #ffed66;
+  border: 3px dotted $yellow;
   padding: 1rem 2rem;
   font-size: 1.2rem;
 }
