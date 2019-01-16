@@ -14,18 +14,21 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: katrin k.
+
 description: >- # this means to ignore newlines until "baseurl:"
   I'm a frontend developer with a special place for CSS in my heart. I create
   user-friendly and accessible websites and web apps. I'm at home in all the
   modern tech stack - HTML templates, CSS preprocessors, JS frameworks
   (preferrably React), static site generators, … aaand good old vanilla
   HTML/CSS/JS.
+
 keywords: >-
   Frontend, web developement, CSS, HTML, JS, React, static site, static site
   generators, HMTL templates, Sass, Less, CSS preprocessors, usability,
   accessibility, blog, CMS
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://die-katrin.eu/frontend-dev/" # the base hostname & protocol for your site, e.g. http://example.com
+
+baseurl: "/frontend-dev" # the subpath of your site, e.g. /blog
+url: "https://die-katrin.eu" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: _die_katrin
 github_username:  katrin-k
 
