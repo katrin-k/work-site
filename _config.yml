@@ -25,7 +25,7 @@ keywords: >-
   generators, HMTL templates, Sass, Less, CSS preprocessors, usability,
   accessibility, blog, CMS
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://work.die-katrin.eu/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://die-katrin.eu/frontend-dev/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: _die_katrin
 github_username:  katrin-k
 
