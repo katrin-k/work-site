@@ -4,13 +4,13 @@
 }
 
 .card-home:hover {
-  outline: 2px dashed $yellow;
+  outline: 2px dashed $card-hover;
   outline-offset: -15px;
 }
 
 .card p,
 .card ul {
-  color: $darkgrey;
+  color: $text-color;
 }
 
 .p-cta {
@@ -54,8 +54,8 @@
 
 @media screen and (min-width: 1200px) {
   .card-wrapper {
-    grid-template-columns: 1fr 3fr 2fr 3fr 1fr 3fr 1fr;
-    grid-template-rows: 2fr 5fr 1fr 1fr 1fr 4fr 2fr;
+    grid-template-columns: 1fr 3fr 2fr 3fr 1fr 4fr 1fr;
+    grid-template-rows: 2fr 5fr 1fr 1fr 1fr 5fr 2fr;
     grid-row-gap: 0;
   }
   @supports (display: grid) {

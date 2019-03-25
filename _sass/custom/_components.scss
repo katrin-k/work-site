@@ -1,8 +1,8 @@
 
 .card {
-  border: 5px solid black;
+  border: 5px solid $card-border;
   padding: 1rem 2rem 2rem;
-  background-color: $darkturquoise;
+  background-color: $card-background;
 }
 
 
@@ -10,13 +10,13 @@
 .text-link:hover,
 .text-link:focus,
 .text-link:visited {
-  border-bottom: 1px dashed $yellow;
+  border-bottom: 1px dashed $link-color-active;
 }
 
 .cta-line {
   display: inline-block;
   margin: 3rem 0 2rem;
-  border: 3px dotted $yellow;
+  border: 3px dotted $link-color-active;
   padding: 1rem 2rem;
   font-size: 1.2rem;
 }
@@ -37,11 +37,7 @@
 .cta-link:hover,
 .cta-link:focus,
 .cta-link:visited {
-  border-bottom: 1px dashed $yellow;
-}
-
-.footer-link {
-  color: $darkred;
+  border-bottom: 1px dashed $link-color-active;
 }
 
 @media screen and (min-width: 650px) {
@@ -64,5 +60,5 @@
 .svg-icon {
   width: 16px;
   height: 16px;
-  fill: $darkgrey;
+  fill: $text-color;
 }

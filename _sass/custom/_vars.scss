@@ -6,21 +6,50 @@ $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $heading-font-family: 'Satisfy', monospace;
 
-$darkred: #8b0000;
-$red: rgba(255, 94, 91, 1);
-$darkgrey: #3e3e3e;
-$grey: rgba(216, 216, 216, 1);
-$paleyellow: rgba(255, 255, 234, 1);
-$turquoise: #00cecb;
-$darkturquoise: #00bab8;
-$yellow: #ffed66;
-$anthrazit: #555;
-
-$background-color: $paleyellow !default;
-
-$text-color: $darkred !default;
-$link-color: $yellow;
 $rgsoc-red: #D82222;
+
+// $darkred: #8b0000;
+// $red: rgba(255, 94, 91, 1);
+// $darkgrey: #3e3e3e;
+// $grey: rgba(216, 216, 216, 1);
+// $paleyellow: rgba(255, 255, 234, 1);
+// $turquoise: #00cecb;
+// $darkturquoise: #00bab8;
+// $yellow: #ffed66;
+// $anthrazit: #555;
+
+// set1
+// $dark-grey: rgb(97, 73, 67);
+// $grey: rgb(178, 182, 191);
+// $dusty-orange: rgb(221, 205, 190);
+// $grey-orange: rgb(184, 168, 144);
+// $dusty-red: rgb(173, 97, 91);
+
+// set 2
+$white: #fff;
+$black: #000;
+$orange-light: rgb(244, 207, 165);
+$orange: rgb(253, 170, 38);
+$orange-dark: rgb(255, 105, 27);
+$green-dark: rgb(99, 107, 53);
+$grey-dark: rgb(62, 42, 31);
+
+$lightest-orange: lighten($orange-light, 17%);
+$darkest-orange: darken($orange-dark, 15%);
+$darkest-green: darken($green-dark, 15%);
+
+$background-color: $lightest-orange !default;
+$text-color: $grey-dark !default;
+$title-color: $green-dark;
+$link-color: $darkest-orange;
+$link-color-active: $darkest-orange;
+$nav-link: $darkest-orange;
+$nav-link-active: $darkest-orange;
+$nav-list-border: $darkest-green;
+$footer-link: $orange-dark;
+$card-background: $white;
+$card-border: $green-dark;
+$card-hover: $green-dark;
 
 
 @mixin transition($time: 0.2s) {
