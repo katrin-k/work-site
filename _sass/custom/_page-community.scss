@@ -1,18 +1,25 @@
 /*======== Community page =========*/
 
-.project-item {
+.project-item,
+.talk-item {
   margin: 2rem 0;
 }
 
-.project-img {
+.project-img,
+.talk-item {
   margin-bottom: 1rem;
 }
 
 .project-img .img-link:hover img,
+.talk-img .img-link:hover img,
 .project-img .img-link:active img,
+.talk-img .img-link:active img,
 .project-img .img-link:focus img,
-.project-img .img-link:visited img {
+.talk-img .img-link:focus img,
+.project-img .img-link:visited img,
+.talk-img .img-link:visited img {
   box-shadow: 0 0 3px $text-color;
+  @include transition;
 }
 
 .project-img img,
@@ -21,7 +28,11 @@
   border-radius: 20px;
   width: 100px;
   height: 100px;
-  @include transition;
+}
+
+.talk-img img {
+  width: 100%;
+  height: auto;
 }
 
 .project-img-rgsoc,
@@ -45,20 +56,54 @@
   object-fit: contain;
 }
 
-.project-heading {
+.project-heading,
+.talk-heading {
   margin-top: 0;
 }
 
+.talk-slide-link {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.talks-embed-heading {
+  font-family: $base-font-family;
+}
+
+.talks-embed-file {
+  width: 100%;
+  height: 300px;
+}
+
 @media screen and (min-width: 768px) {
-  .project-item {
+  .project-item,
+  .talk-item {
     display: flex;
   }
   /* min-width for Safari 9.x to properly size flex items */
   .project-img {
     min-width: 100px;
   }
-  .project-info {
+  .project-info,
+  .talk-info {
     margin: 0.4rem 0 0 1.5rem;
     max-width: 75%;
+  }
+  .talk-img img {
+    width: 200px;
+    height: auto;
+  }
+  .talks-embed-file {
+    height: 600px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .talk-img img {
+    width: 400px;
+    height: auto;
+  }
+  .talks-embed-file {
+    height: 800px;
   }
 }
