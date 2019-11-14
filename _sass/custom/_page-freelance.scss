@@ -20,3 +20,38 @@
     margin-left: 5rem;
   }
 }
+
+/*======== Availability Label =========*/
+.availability {
+  display: flex;
+  margin-bottom: 1rem;
+  color: $white;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.availability__status,
+.availability__available,
+.availability__not-available {
+  padding: 4px 11px 6px;
+}
+
+.availability__status {
+  background: $grey-dark;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.availability__available,
+.availability__not-available {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.availability__available {
+  background: $lightest-green;
+}
+
+.availability__not-available {
+  background: $orange-dark;
+}

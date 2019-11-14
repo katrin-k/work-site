@@ -1,12 +1,14 @@
 // Define defaults for each variable.
 
-$base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$base-font-size:   18px !default;
+$base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol";
+$base-font-size: 18px !default;
 $base-font-weight: 400 !default;
-$small-font-size:  $base-font-size * 0.875 !default;
-$heading-font-family: 'Satisfy', monospace;
+$small-font-size: $base-font-size * 0.875 !default;
+$heading-font-family: "Satisfy", monospace;
 
-$rgsoc-red: #D82222;
+$rgsoc-red: #d82222;
 
 // $darkred: #8b0000;
 // $red: rgba(255, 94, 91, 1);
@@ -36,6 +38,7 @@ $grey-dark: rgb(62, 42, 31);
 
 $lightest-orange: lighten($orange-light, 17%);
 $darkest-orange: darken($orange-dark, 15%);
+$lightest-green: lighten($green-dark, 15%);
 $darkest-green: darken($green-dark, 15%);
 
 $background-color: $lightest-orange !default;
@@ -50,7 +53,6 @@ $footer-link: $orange-dark;
 $card-background: $white;
 $card-border: $green-dark;
 $card-hover: $green-dark;
-
 
 @mixin transition($time: 0.2s) {
   transition: all $time ease-in;
