@@ -4,6 +4,16 @@
   background-color: $card-background;
 }
 
+.card p,
+.card ul {
+  color: $text-color;
+}
+
+.card__cta {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
 @media screen and (min-width: 768px) {
   .card {
     padding: 1rem 3rem 2rem;

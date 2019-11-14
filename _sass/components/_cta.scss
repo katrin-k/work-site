@@ -1,4 +1,4 @@
-.cta-line {
+.cta__line {
   display: inline-block;
   margin: 3rem 0 2rem;
   border: 3px dotted $link-color-active;
@@ -6,39 +6,15 @@
   font-size: 1.2rem;
 }
 
-.cta-icon-left,
-.cta-icon-right {
-  display: none;
-  font-family: sans-serif;
-  vertical-align: middle;
-}
-
-.cta-link {
+.cta__link {
   padding-bottom: 0.2rem;
   font-weight: 600;
 }
 
-.cta-link:active,
-.cta-link:hover,
-.cta-link:focus,
-.cta-link:visited {
+.cta__link:active,
+.cta__link:hover,
+.cta__link:focus,
+.cta__link:visited {
   text-decoration: none;
   border-bottom: 2px dashed $link-color-active;
-}
-
-@media screen and (min-width: 650px) {
-  .cta-icon-left,
-  .cta-icon-right {
-    display: inline-block;
-    font-size: 2.7rem;
-  }
-
-  .cta-icon-left {
-    margin-right: 0.3rem;
-    transform: scaleX(-1);
-  }
-
-  .cta-icon-right {
-    margin-left: 0.3rem;
-  }
 }

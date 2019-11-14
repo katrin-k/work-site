@@ -3,10 +3,10 @@
   margin: 1rem 0;
 }
 
-.sample-pic-box .img-link:hover,
-.sample-pic-box .img-link:active,
-.sample-pic-box .img-link:focus,
-.sample-pic-box .img-link:visited {
+.sample-pic-box .img__link:hover,
+.sample-pic-box .img__link:active,
+.sample-pic-box .img__link:focus,
+.sample-pic-box .img__link:visited {
   outline: 3px solid $text-color;
   display: block;
 }

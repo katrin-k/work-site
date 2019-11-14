@@ -1,109 +1,109 @@
 /*======== Community page =========*/
 
-.project-item,
-.talk-item {
+.project__item,
+.talk__item {
   margin: 2rem 0;
 }
 
-.project-img,
-.talk-item {
+.project_img,
+.talk__item {
   margin-bottom: 1rem;
 }
 
-.project-img .img-link:hover img,
-.talk-img .img-link:hover img,
-.project-img .img-link:active img,
-.talk-img .img-link:active img,
-.project-img .img-link:focus img,
-.talk-img .img-link:focus img,
-.project-img .img-link:visited img,
-.talk-img .img-link:visited img {
+.project_img .img__link:hover img,
+.talk_img .img__link:hover img,
+.project_img .img__link:active img,
+.talk_img .img__link:active img,
+.project_img .img__link:focus img,
+.talk_img .img__link:focus img,
+.project_img .img__link:visited img,
+.talk_img .img__link:visited img {
   box-shadow: 0 0 3px $text-color;
   @include transition;
 }
 
-.project-img img,
-.project-img-rgsoc,
-.project-img-crypto {
+.project_img img,
+.project_img--rgsoc,
+.project_img--crypto {
   border-radius: 20px;
   width: 100px;
   height: 100px;
 }
 
-.talk-img img {
+.talk_img img {
   width: 100%;
   height: auto;
 }
 
-.project-img-rgsoc,
-.project-img-crypto {
+.project_img--rgsoc,
+.project_img--crypto {
   display: -ms-flexbox;
   display: flex;
   align-items: center;
 }
 
-.project-img-rgsoc .img-link,
-.project-img-crypto .img-link {
+.project_img--rgsoc .img__link,
+.project_img--crypto .img__link {
   align-self: stretch;
 }
 
-.project-img-rgsoc {
+.project_img--rgsoc {
   background-color: $rgsoc-red;
 }
 
-.project-img-rgsoc img,
-.project-img-crypto img {
+.project_img--rgsoc img,
+.project_img--crypto img {
   object-fit: contain;
 }
 
-.project-heading,
-.talk-heading {
+.project__heading,
+.talk__heading {
   margin-top: 0;
 }
 
-.talk-slide-link {
+.talk__slide-link {
   display: inline-block;
   margin-top: 1rem;
 }
 
-.talks-embed-heading {
+.talks-embed__heading {
   font-family: $base-font-family;
 }
 
-.talks-embed-file {
+.talks-embed__file {
   width: 100%;
   height: 300px;
 }
 
 @media screen and (min-width: 768px) {
-  .project-item,
-  .talk-item {
+  .project__item,
+  .talk__item {
     display: flex;
   }
   /* min-width for Safari 9.x to properly size flex items */
-  .project-img {
+  .project_img {
     min-width: 100px;
   }
-  .project-info,
-  .talk-info {
+  .project__info,
+  .talk__info {
     margin: 0.4rem 0 0 1.5rem;
     max-width: 75%;
   }
-  .talk-img img {
+  .talk_img img {
     width: 200px;
     height: auto;
   }
-  .talks-embed-file {
+  .talks-embed__file {
     height: 600px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .talk-img img {
+  .talk_img img {
     width: 400px;
     height: auto;
   }
-  .talks-embed-file {
+  .talks-embed__file {
     height: 800px;
   }
 }
