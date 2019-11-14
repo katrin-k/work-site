@@ -8,12 +8,17 @@
   outline-offset: -15px;
 }
 
+.card-home__heading {
+  @extend h1;
+  margin: 1rem 0 0;
+}
+
 .card p,
 .card ul {
   color: $text-color;
 }
 
-.p-cta {
+.card-cta {
   margin: 0.5rem 0;
   font-size: 1.2rem;
 }
@@ -26,7 +31,7 @@
   .card-wrapper {
     display: grid;
     grid-template-columns: repeat(5, 20%);
-    grid-template-rows: repeat(5, 200px);
+    grid-template-rows: repeat(5, 220px);
     grid-row-gap: 10px;
     max-height: 1200px;
   }
@@ -49,6 +54,12 @@
     grid-column: 1/4;
     grid-row: 4/6;
     align-self: end;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .card-wrapper {
+    grid-template-rows: repeat(5, 200px);
   }
 }
 

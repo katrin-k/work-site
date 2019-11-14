@@ -6,15 +6,18 @@
 }
 
 // Import partials.
-@import
-  "custom/vars",
-  "custom/normalize",
-  "custom/base",
-  "custom/layout",
-  "custom/components",
-  "custom/page-community",
-  "custom/page-freelance",
-  "custom/page-home",
-  "custom/page-samples",
-  "custom/page-contact"
-;
+@import 'base/vars';
+@import 'base/defaults';
+@import 'base/layout';
+@import 'components/card';
+@import 'components/cta';
+@import 'components/page-community';
+@import 'components/page-freelance';
+@import 'components/page-home';
+@import 'components/page-samples';
+@import 'components/page-contact';
+@import 'includes/header';
+@import 'includes/nav-list';
+@import 'includes/footer';
+@import 'includes/availability';
+@import 'includes/social';

@@ -1,0 +1,69 @@
+.header {
+  margin: 1rem 0 3rem 1rem;
+}
+
+.title {
+  @extend h1;
+  color: $title-color;
+  font-size: 4rem;
+}
+
+.subtitle {
+  font-family: 'Satisfy', monospace;
+  font-style: italic;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.subtitle__span {
+  display: block;
+  &::before {
+    content: '#';
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    margin-left: 2rem;
+  }
+  .title {
+    font-size: 5rem;
+  }
+  .subtitle {
+    font-size: 2.7rem;
+    letter-spacing: 0.1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0 3rem 1rem;
+  }
+  .subtitle {
+    text-align: right;
+  }
+  .subtitle__span {
+    &::before {
+      content: '';
+    }
+    &::after {
+      content: '#';
+      position: relative;
+      top: 5px;
+      margin-left: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    margin-left: 5rem;
+  }
+}

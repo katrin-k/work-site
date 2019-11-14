@@ -1,0 +1,11 @@
+.card {
+  border: 5px solid $card-border;
+  padding: 1rem 2rem 2rem;
+  background-color: $card-background;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    padding: 1rem 3rem 2rem;
+  }
+}

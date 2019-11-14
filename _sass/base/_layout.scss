@@ -1,0 +1,22 @@
+/* ============================= */
+/* Basic page layout styles */
+
+.wrapper {
+  margin: 0 0.5rem;
+  display: grid;
+  grid-template-rows: max-content 1fr 90px;
+  height: 100vh;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    margin: 0 2rem;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

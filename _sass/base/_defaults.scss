@@ -1,0 +1,82 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $background-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  color: $text-color;
+  line-height: 1.5;
+}
+
+h1,
+h2 {
+  margin: 2rem 0 1rem;
+  line-height: 1.2;
+}
+
+h1 {
+  color: $title-color;
+  font-family: $heading-font-family;
+  font-size: 2.1rem;
+  letter-spacing: 3px;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3,
+h4 {
+  margin: 2rem 0 0.5rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+p {
+  margin-bottom: 0.5rem;
+}
+
+ul {
+  list-style: none;
+  margin: 1rem 0 1rem 1rem;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-decoration-thickness: 2px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.7rem;
+  }
+  h2 {
+    font-size: 1.7rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+}
